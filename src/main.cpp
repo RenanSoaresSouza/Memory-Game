@@ -47,13 +47,13 @@ class Game {
             data = YELLOWpin;
           }
           if (data > 0){
-            //digitalWrite(Buzzer,HIGH);
+            digitalWrite(Buzzer,HIGH);
             while(digitalRead(REDpin)    || 
                   digitalRead(GREENpin)  ||
                   digitalRead(YELLOWpin) || 
                   digitalRead(BLUEpin));
             delay(50);
-            //digitalWrite(Buzzer,LOW);
+            digitalWrite(Buzzer,LOW);
             if (data == round[x]){
               break;
             } else {
@@ -84,12 +84,12 @@ class Game {
       for(int x =0; x<tam;x++){
         int data =round[x];
         Serial.print(data);
-        //digitalWrite(Buzzer,HIGH);
+        digitalWrite(Buzzer,HIGH);
         digitalWrite(data,HIGH);
-        delay(200);
+        delay(100);
         digitalWrite(data,LOW);
-        //digitalWrite(Buzzer,LOW);
-        delay(200);
+        digitalWrite(Buzzer,LOW);
+        delay(100);
       }
     }
     void lose(){
@@ -97,26 +97,26 @@ class Game {
       pinMode(BLUEpin,OUTPUT);
       pinMode(GREENpin,OUTPUT);
       pinMode(YELLOWpin,OUTPUT);
-        for (int x=0;x<10;x++){
+        for (int x=0;x<5;x++){
           digitalWrite(Buzzer,HIGH);
           digitalWrite(REDpin,HIGH);
           digitalWrite(GREENpin,HIGH);
           digitalWrite(BLUEpin,HIGH);
           digitalWrite(YELLOWpin,HIGH);
           delay(100);
-          digitalWrite(Buzzer,LOW);
           digitalWrite(REDpin,LOW);
           digitalWrite(GREENpin,LOW);
           digitalWrite(BLUEpin,LOW);
           digitalWrite(YELLOWpin,LOW);
           delay(100);
         }
+        digitalWrite(Buzzer,LOW);
     }
 };
 void setup() {
   randomSeed(analogRead(A0));
   pinMode(BUTTONaction,OUTPUT);
-  //pinMode(Buzzer,OUTPUT);
+  pinMode(Buzzer,OUTPUT);
   Serial.begin(115200);
 }
 
