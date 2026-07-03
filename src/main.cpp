@@ -17,13 +17,13 @@ class Game {
     int round[100];
     int tam = 0;
   public:
-    Game(){
+    Game(){ // inicio do jJogo
       int data = random(2,6);
       round[0] = data;
       tam++;
 
     }
-    int verify(){
+    int verify(){ // verifica os inputs do jogador até o ultimo round contido no vetor
       digitalWrite(BUTTONaction,HIGH);
       pinMode(REDpin,INPUT);
       pinMode(GREENpin,INPUT);
@@ -65,7 +65,7 @@ class Game {
       digitalWrite(BUTTONaction,LOW);
       return 0;
     }
-    int nextround(){
+    int nextround(){ // insere valor aleatorio para o próximo round
       int data = random(2,6);
       if (tam == 100){
         return -1;
@@ -92,7 +92,7 @@ class Game {
         delay(100);
       }
     }
-    void lose(){
+    void lose(){ // executa quando o jogador perde
       pinMode(REDpin,OUTPUT);
       pinMode(BLUEpin,OUTPUT);
       pinMode(GREENpin,OUTPUT);
