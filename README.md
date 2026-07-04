@@ -9,15 +9,20 @@ Foco de Aprendizado:
 - POO
 - Circuitos Eletrônicos
 - Hardware
-## Arquitetura do Hardware 
+## Circuito Elétrico
 Busquei utilizar mais componentes eletrônicos a fim de entender melhor os seus funcionamentos e suas utilidades na prática.
 
 Componentes Utilizados:
-- 4 leds
-- 4 diodos retificadores (1N4007)
+- 4 Leds
+- 4 Diodos retificadores (1N4007)
 - 4 Resistores de 330Ω
-- 4 botões
+- 4 Botões
+- 1 Resistor de 1kΩ
 - 1 Buzzer Ativo de 5V
-- 1 transistor BJT NPN (2N2222)
+- 1 Transistor BJT NPN (2N2222)
+- 1 Arduino UNO R3 CH340
+### Esquemático do circuito
+
+![image](img/Schematic_Memory-Game-Sheet_2026-07-03.png)
 
 
