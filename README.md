@@ -25,4 +25,6 @@ Componentes Utilizados:
 
 ![image](img/Schematic_Memory-Game-Sheet_2026-07-03.png)
 
+## Arquitetura do Projeto
+
 
