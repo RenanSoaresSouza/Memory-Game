@@ -26,5 +26,23 @@ Componentes Utilizados:
 ![image](img/Schematic_Memory-Game-Sheet_2026-07-03.png)
 
 ## Arquitetura do Projeto
+~~~~
+  ├── .vscode/        # Extensões do Visual Studio Code
+  ├── img/            # Imagem do Circuito Elétrico
+  ├── include/        # Bibliotecas incluidas no projeto 
+  ├── lib/            # arquivos .h utilizados no projeto 
+  ├── src/            # pasta principal do programa
+  └── test/           # pasta reservada pelo PlatformIO para testes
+~~~~
+## Como Rodar Localmente
+Você precisará ter instalado:
+- Visual Studio Code
+- git
+- PlatformIO IDE (extensão do Visual Studio Code)
 
+Clone o repositório com
+~~~
+git clone https://github.com/RenanSoaresSouza/Memory-Game
+~~~
+Abra a Platform IDE no Visual Studio Code e depois coloque na placa com as devidas configurações.
 
