@@ -1,19 +1,42 @@
 # Memory Game
+![PlatformIO](https://img.shields.io/badge/PlatformIO-IDE-orange)
+![Arduino](https://img.shields.io/badge/Arduino-UNO-blue)
+![Language](https://img.shields.io/badge/C%2B%2B-17-blue)
 
 Jogo da memória desenvolvido utilizando **PlatformIO**, **Arduino** e **C++**.
 
 O jogo gera uma sequência aleatória de luzes que é apresentada ao jogador. Em seguida, o jogador deve repetir exatamente a mesma sequência utilizando os botões correspondentes. A cada rodada, um novo passo é adicionado à sequência, aumentando progressivamente a dificuldade. O jogo continua até que o jogador cometa um erro, momento em que a partida é encerrada e reiniciada.
 
-## Objetivos de Aprendizado
+## Problema
 
-Este projeto foi desenvolvido com foco no aprendizado de:
+Jogos eletrônicos interativos são uma excelente forma de aplicar conceitos de sistemas embarcados, pois exigem controle de dispositivos de entrada e saída, temporização precisa e gerenciamento de estados. Este projeto implementa uma versão do clássico jogo Simon utilizando Arduino, explorando a integração entre hardware e software em um sistema embarcado de recursos limitados.
 
-- Arduino
-- C++
-- Programação Orientada a Objetos (POO)
-- Circuitos Eletrônicos
-- Integração entre Hardware e Software
+## Decisões de Projeto
 
+A sequência do jogo é armazenada em um vetor de tamanho fixo em vez de uma lista encadeada.
+
+Essa decisão foi tomada devido às limitações de memória do Arduino Uno (2 KB de SRAM). O uso de um vetor elimina alocações dinâmicas durante a execução, reduz a fragmentação de memória e garante um consumo previsível de recursos, característica importante em sistemas embarcados.
+
+## Conceitos Aplicados
+
+Durante o desenvolvimento foram utilizados conceitos como:
+
+- Programação Orientada a Objetos (C++);
+- Manipulação de GPIO;
+- Temporização com Arduino;
+- Geração de números pseudoaleatórios;
+- Controle de estados;
+- Estruturas de dados estáticas ()
+- Integração entre hardware e software.
+
+## Funcionalidades
+
+- Geração aleatória de sequências.
+- Reprodução visual utilizando LEDs.
+- Reprodução sonora utilizando buzzer.
+- Leitura dos botões.
+- Incremento automático da dificuldade.
+- Reinício automático após erro.
 ---
 
 ## Hardware
@@ -84,11 +107,10 @@ git clone https://github.com/RenanSoaresSouza/Memory-Game.git
 
 ---
 
-## Licença
+## Autores
+
+***Renan Soares Souza***
 
 #### Este projeto foi desenvolvido para fins de estudo e aprendizado.
-![PlatformIO](https://img.shields.io/badge/PlatformIO-IDE-orange)
-![Arduino](https://img.shields.io/badge/Arduino-UNO-blue)
-![Language](https://img.shields.io/badge/C%2B%2B-17-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+
 
