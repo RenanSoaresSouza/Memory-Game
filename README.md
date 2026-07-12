@@ -2,6 +2,7 @@
 ![PlatformIO](https://img.shields.io/badge/PlatformIO-IDE-orange)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-blue)
 ![Language](https://img.shields.io/badge/C%2B%2B-17-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Jogo da memória desenvolvido utilizando **PlatformIO**, **Arduino** e **C++**.
 
@@ -112,5 +113,10 @@ git clone https://github.com/RenanSoaresSouza/Memory-Game.git
 ***Renan Soares Souza***
 
 #### Este projeto foi desenvolvido para fins de estudo e aprendizado.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
+
 
 
