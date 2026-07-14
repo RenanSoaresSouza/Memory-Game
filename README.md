@@ -12,7 +12,7 @@ O jogo gera uma sequência aleatória de luzes que é apresentada ao jogador. Em
 
 A sequência do jogo é armazenada em um vetor de tamanho fixo em vez de uma lista encadeada.
 
-Essa decisão foi tomada devido às limitações de memória do Arduino Uno (2 KB de SRAM). O uso de um vetor elimina alocações dinâmicas durante a execução, reduz a fragmentação de memória e garante um consumo previsível de recursos.
+Essa decisão foi tomada devido às limitações de memória do Arduino Uno (2 KB de SRAM). O uso de um vetor elimina alocações dinâmicas durante a execução, reduz a fragmentação de memória e garante um consumo previsível de memória.
 
 ## Conceitos Aplicados
 
