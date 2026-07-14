@@ -27,7 +27,7 @@ Durante o desenvolvimento foram utilizados conceitos como:
 - Temporização com Arduino;
 - Geração de números pseudoaleatórios;
 - Controle de estados;
-- Estruturas de dados estáticas ()
+- Estruturas de dados estáticas 
 - Integração entre hardware e software.
 
 ## Funcionalidades
