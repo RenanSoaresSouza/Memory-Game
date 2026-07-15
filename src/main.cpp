@@ -9,7 +9,6 @@
 #define Buzzer 6
 //constante do Input dos Botoes
 
-// usando lista simplesmente encadeada como modelo para armazenamento dos rounds do jogo da memória
 
 
 class Game {
